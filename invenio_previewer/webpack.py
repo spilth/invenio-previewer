@@ -35,6 +35,8 @@ previewer = WebpackThemeBundle(
     themes={
         "bootstrap3": dict(
             entry={
+                "geojson_js": "./js/invenio_previewer/geojson.js",
+                "geojson_css": "./scss/invenio_previewer/geojson.scss",
                 "papaparse_csv": "./js/invenio_previewer/csv_previewer/init.js",
                 "previewer_theme": "./js/invenio_previewer/previewer_theme.js",
                 "fullscreen_js": "./js/invenio_previewer/fullscreen.js",
@@ -47,6 +49,7 @@ previewer = WebpackThemeBundle(
             },
             dependencies={
                 "bootstrap-sass": "~3.3.5",
+                "leaflet": "^1.9.4",
                 "papaparse": "^5.4.1",
                 "flightjs": "~1.5.1",
                 "font-awesome": "~4.5.0",
@@ -60,6 +63,8 @@ previewer = WebpackThemeBundle(
         ),
         "semantic-ui": dict(
             entry={
+                "geojson_js": "./js/invenio_previewer/geojson.js",
+                "geojson_css": "./scss/invenio_previewer/geojson.scss",
                 "papaparse_csv": "./js/invenio_previewer/csv_previewer/init.js",
                 "previewer_theme": "./js/invenio_previewer/previewer_theme.js",
                 "fullscreen_js": "./js/invenio_previewer/fullscreen.js",
@@ -81,6 +86,7 @@ previewer = WebpackThemeBundle(
                 "flightjs": "~1.5.1",
                 "font-awesome": "~4.5.0",
                 "jquery": "^3.3.1",
+                "leaflet": "^1.9.4",
                 "papaparse": "^5.4.1",
                 "pdfjs-dist": "^1.4.192",
                 "prismjs": "^1.15.0",
